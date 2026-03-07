@@ -14,6 +14,14 @@
   --container-width: 1200px;
 }
 
+[data-theme="light"] {
+  --bg-color: #f8fafc;
+  --surface-color: rgba(255, 255, 255, 0.8);
+  --border-color: rgba(0, 0, 0, 0.05);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -104,6 +112,7 @@ ul {
 
 .gradient-text {
   background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -184,6 +193,41 @@ nav .container {
 
 .nav-links a:hover {
   color: var(--text-primary);
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-color);
+  transform: rotate(15deg);
+}
+
+.theme-toggle i {
+  width: 20px;
+  height: 20px;
+  transition: var(--transition);
+}
+
+[data-theme="light"] .sun-icon {
+  display: none;
+}
+
+[data-theme="dark"] .moon-icon {
+  display: none;
 }
 
 /* Hero Section */

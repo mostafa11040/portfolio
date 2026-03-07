@@ -45,5 +45,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Check for saved theme or system preference
+const savedTheme = localStorage.getItem('theme');
+const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme) {
+    body.setAttribute('data-theme', savedTheme);
+} else if (systemDark) {
+    body.setAttribute('data-theme', 'dark');
+} else {
+    body.setAttribute('data-theme', 'light');
+}
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Smooth transition for Lucide replacement
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+});
+
 // Log a cool message to console
 console.log('%c Portfolio Starter Booted! ', 'background: #6366f1; color: #fff; padding: 5px; border-radius: 5px;')
