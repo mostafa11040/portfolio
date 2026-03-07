@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostafa Ali | Flutter Developer Portfolio</title>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* Pre-load styles to prevent FOUC */
+      body {
+        background-color: #030712;
+        color: #f9fafb;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <a href="#" class="logo">MOSTAFA.<span>ALI</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Hire Me</a>
+      </div>
+    </nav>
+
+    <header id="home" class="hero section-padding">
+      <div class="container hero-content">
+        <div class="badge">Military Service: Completed</div>
+        <h1>Hi, I'm <span class="gradient-text">Mostafa Ali</span></h1>
+        <h2>Flutter Developer</h2>
+        <p>Experienced Flutter Developer with over 1 year of expertise in building cross-platform mobile applications. Passionate about creating high-quality, user-friendly mobile experiences.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Projects <i data-lucide="arrow-right"></i></a>
+          <a href="https://github.com/mostafa11040" target="_blank" class="btn btn-secondary"><i data-lucide="github"></i> GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="glass-card reveal">
+                <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Professional Objective</h2>
+                </div>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 900px;">
+                    Experienced Flutter Developer with over 1 year of expertise in building cross-platform mobile applications. 
+                    Strong proficiency in Dart programming, UI/UX design, and integrating APIs. 
+                    Passionate about creating high-quality, user-friendly mobile experiences. 
+                    Seeking a dynamic role to contribute my skills in mobile app development and enhance the growth of an innovative team.
+                </p>
+                
+                <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="briefcase" class="gradient-text"></i> Experience</h3>
+                        <div style="border-left: 2px solid var(--accent-color); padding-left: 1.5rem; margin-top: 1rem;">
+                            <h4>Active4Web</h4>
+                            <p class="tag" style="display: inline-block; margin-bottom: 0.5rem;">Flutter Developer</p>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Aug 2022 – Oct 2022 | Nasr City, Egypt</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="graduation-cap" class="gradient-text"></i> Education</h3>
+                        <div style="border-left: 2px solid var(--accent-color); padding-left: 1.5rem; margin-top: 1rem;">
+                            <h4>El Shorouk Academy (SHA)</h4>
+                            <p style="color: var(--text-secondary);">Faculty of Computer and Information Technology</p>
+                            <p style="font-weight: 600;">Major: Computer Science</p>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">2018 - 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2>Featured Projects</h2>
+          <p>Highlighting my work in mobile application development.</p>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Meal Monkey -->
+          <article class="project-card glass-card reveal">
+            <div class="project-img">
+              <span>Meal Monkey</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Stripe/PayPal</span>
+            </div>
+            <h3>Meal Monkey</h3>
+            <p>A comprehensive food ordering app with restaurant discovery, cart management, and multi-option payment integration (Cash/Visa). Features Firebase authentication and profile management.</p>
+            <a href="https://github.com/mostafa11040" target="_blank" class="project-link">View Repository <i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+          </article>
+
+          <!-- Ogrety -->
+          <article class="project-card glass-card reveal">
+            <div class="project-img">
+              <span>Ogrety</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Utility</span>
+            </div>
+            <h3>Ogrety</h3>
+            <p>A streamlined mobile application designed to calculate car fares efficiently, providing users with quick trip cost estimates for better ride planning.</p>
+            <a href="https://github.com/mostafa11040" target="_blank" class="project-link">View Repository <i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+          </article>
+
+          <!-- Courses/Certifications -->
+          <article class="project-card glass-card reveal">
+            <div class="project-img">
+              <span>Certifications</span>
+            </div>
+            <div class="project-tags">
+                <span class="tag">MVVM</span>
+                <span class="tag">BLoC</span>
+                <span class="tag">Udacity</span>
+            </div>
+            <h3>Advanced Training</h3>
+            <p>Completed specialized courses including Udacity's One Million Arab Coders, Advanced Bloc & MVVM Pattern, and Payment Integration Mastery.</p>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem;">
+                • Flutter Advanced (Tharwat Samy)<br>
+                • Payment Integration (Stripe, PayPal)<br>
+                • The Complete Flutter & Dart (Abdullah Mansour)
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2>Technical Toolbox</h2>
+          <p>Frameworks, languages, and patterns I use to build robust applications.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item glass-card reveal">
+            <i data-lucide="smartphone" class="skill-icon"></i>
+            <h3>Flutter & Dart</h3>
+          </div>
+          <div class="skill-item glass-card reveal">
+            <i data-lucide="database" class="skill-icon"></i>
+            <h3>Firebase</h3>
+          </div>
+          <div class="skill-item glass-card reveal">
+            <i data-lucide="layers" class="skill-icon"></i>
+            <h3>BLoC & Provider</h3>
+          </div>
+          <div class="skill-item glass-card reveal">
+            <i data-lucide="cpu" class="skill-icon"></i>
+            <h3>MVVM Pattern</h3>
+          </div>
+          <div class="skill-item glass-card reveal">
+            <i data-lucide="git-branch" class="skill-icon"></i>
+            <h3>Version Control</h3>
+          </div>
+          <div class="skill-item glass-card reveal">
+            <i data-lucide="credit-card" class="skill-icon"></i>
+            <h3>Payment APIs</h3>
+          </div>
+        </div>
+        
+        <div style="margin-top: 4rem; text-align: center;" class="reveal">
+            <h3 style="margin-bottom: 2rem;">Languages</h3>
+            <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                <div>
+                    <p style="font-weight: 700; color: var(--accent-color);">Arabic</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Native</p>
+                </div>
+                <div>
+                    <p style="font-weight: 700; color: var(--accent-color);">English</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Very Good (Proficient)</p>
+                </div>
+                <div>
+                    <p style="font-weight: 700; color: var(--accent-color);">German</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Intermediate</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <div class="container contact-container">
+        <div class="contact-info reveal">
+          <div class="glass-card">
+            <h2>Let's build something together</h2>
+            <p>Cairo, Egypt | 01287078079</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; margin-top: 2rem;">
+                <a href="mailto:mostafaali201178@gmail.com" class="btn btn-primary" style="width: 100%; justify-content: center;">mostafaali201178@gmail.com <i data-lucide="send"></i></a>
+                <div style="display: flex; gap: 1rem; width: 100%;">
+                    <a href="https://linkedin.com/in/mostafa-ali-8072b3232" target="_blank" class="btn btn-secondary" style="flex: 1; justify-content: center;"><i data-lucide="linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/mostafa11040" target="_blank" class="btn btn-secondary" style="flex: 1; justify-content: center;"><i data-lucide="github"></i> GitHub</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/mostafa11040" target="_blank" class="social-link"><i data-lucide="github" class="social-icon"></i></a>
+          <a href="https://linkedin.com/in/mostafa-ali-8072b3232" target="_blank" class="social-link"><i data-lucide="linkedin" class="social-icon"></i></a>
+          <a href="mailto:mostafaali201178@gmail.com" class="social-link"><i data-lucide="mail" class="social-icon"></i></a>
+        </div>
+        <div class="copyright">
+          © 2024 Mostafa Ali - Flutter Developer Portfolio
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
