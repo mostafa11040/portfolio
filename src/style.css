@@ -11,7 +11,7 @@
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --container-width: 1200px;
+  --container-width: 1400px;
 }
 
 [data-theme="light"] {
@@ -400,6 +400,130 @@ nav .container {
 
 .project-link:hover {
   text-decoration: underline;
+}
+
+/* Certificates Section */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.certificate-card {
+  overflow: hidden;
+  padding: 0;
+  border-radius: 1rem;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -8px rgba(99, 102, 241, 0.25);
+}
+
+.certificate-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.certificate-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.certificate-card:hover .certificate-img {
+  transform: scale(1.05);
+}
+
+.certificate-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.certificate-overlay .btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.7rem;
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-info {
+  padding: 0.75rem 0.75rem 1rem;
+}
+
+.certificate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15));
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 999px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.certificate-badge i {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.certificate-info h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.certificate-issuer {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.certificate-meta-logo {
+  font-weight: 700;
+  color: var(--accent-color);
+  font-size: 0.7rem;
+}
+
+.certificate-date {
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .certificates-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Skills Section */
